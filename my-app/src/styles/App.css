@@ -1,0 +1,142 @@
+:root {
+  --colorGray: #bcbcbc;
+  --colorGrayLight: #e3e3e3;
+  --colorGraySuperLight: #f7f5f5;
+  --colorBlack: #000;
+  --colorWhite: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Caveat", cursive;
+}
+
+.Content {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Title {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.InputContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.InputContainer button {
+  background-color: var(--colorWhite);
+  border: 1px solid var(--colorGray);
+  border-right: none;
+  cursor: pointer;
+  height: 40px;
+  width: 25px;
+}
+
+.InputContainer input {
+  width: 400px;
+  height: 40px;
+  border: 1px solid var(--colorGray);
+  border-left: none;
+  padding-left: 0.5rem;
+  outline: none;
+  font-size: 1.3rem;
+}
+
+.InputContainer img {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.List {
+  display: flex;
+  flex-direction: column;
+  width: 425px;
+  height: 40px;
+}
+
+.List li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 0.5rem;
+  list-style: none;
+  border: 1px solid var(--colorGray);
+  border-top: none;
+  border-left: none;
+  height: 40px;
+  width: 425px;
+  font-size: 1.3rem;
+}
+
+.AcceptButton {
+  cursor: pointer;
+  background-color: var(--colorWhite);
+  padding: 0.3rem;
+  border: 1px solid var(--colorGray);
+  border-right: none;
+  border-top: none;
+}
+
+.CheckImage {
+  border: 1px solid var(--colorGray);
+  padding: 0.25rem;
+  border-radius: 50%;
+  margin-top: 0.2rem;
+}
+
+.BodyItems {
+  display: flex;
+  flex-direction: row;
+}
+
+.FooterList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  gap: 1rem;
+  border: 1px solid var(--colorGray);
+  border-top: none;
+  background-color: var(--colorGraySuperLight);
+}
+
+.ItemsLeft {
+  margin-top: 0.11rem;
+  font-size: 1rem;
+}
+
+.ButtonsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.AllButton, .ActiveButton, .CompletedButton, .ClearButton {
+  cursor: pointer;
+  background: none;
+  border: 1px solid var(--colorGraySuperLight);
+  padding: 0.15rem 0.25rem;
+  font-size: 1rem;
+}
+
+.AllButton.active, .ActiveButton.active, .CompletedButton.active, .ClearButton.active {
+  border: 1px solid var(--colorGray);
+}
